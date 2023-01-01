@@ -33,7 +33,7 @@ def submit():
   db.session.add(student)
   db.session.commit()
  
-  #fetch a certain student
+
   studentResult=db.session.query(Student).filter(Student.id==1)
   for result in studentResult:
     print(result.fname)
